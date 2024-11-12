@@ -8,9 +8,9 @@ public class Bill3 {
 
         Double bill = Double.parseDouble(args[3]);
         Double totalPer = bill / 3;
-		Double rounder = totalPer*10
+		Double rounder = totalPer*10;
 
-		int billR = int.parseInt(args[3]);
+		int billR = Integer.parseInt(args[3]);
 		
 		if (rounder % 10 > 0){
 			billR == billR + 1;
