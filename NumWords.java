@@ -12,6 +12,7 @@ public class NumWords {
             System.out.println("Please enter a number between 0 and 999.");
         } else {
             // Finds each digit
+            int number = Integer.parseInt(args[0]);
             int hundreds = number / 100;
             int tens = (number / 10) % 10;
             int units = number % 10;

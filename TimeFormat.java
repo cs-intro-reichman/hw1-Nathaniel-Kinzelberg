@@ -10,14 +10,15 @@ public class TimeFormat {
 		// It then concatenates the resulting string with the rightmost hour-digit,
 		// and then uses parseInt to cast the resulting string as an int.
 		
-		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
-        int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
+		int hour = Integer.parseInt(args[0].split(":")[0]);
 
-        // Determine AM/PM and convert hours to 12-hour format
-        String period = (hours >= 12) ? "PM" : "AM";
-        hours = (hours % 12 == 0) ? 12 : hours % 12;
+		int minute = Integer.parseInt(args[0].split(":")[1]);
 
-        // Print the result in hh:mm AM/PM format
-        System.out.printf("%02d:%02d %s\n", hours, minutes, period);
+		String period = hour >= 12 ? "PM" : "AM";
+
+		hour = hour % 12 == 0 ? 12 : hour % 12;  // Switches from 24hr to 12 hr format
+
+		System.out.printf("%d:%02d %s%n", hour, minute, period);  // prints hour without a zero but minute with 2 digits
+
 	}
 }

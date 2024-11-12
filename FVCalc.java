@@ -17,7 +17,7 @@ public class FVCalc {
         int y = scanner.nextInt();
 
         // Calculate future value using the formula FV = P * (1 + r)^n
-        double future value = p * Math.pow((1 + r), y);
+        double futureValue = p * Math.pow((1 + r), y);
 
         // Display the result
         System.out.println("The future value of the investment is: %.2f\n", futureValue);
