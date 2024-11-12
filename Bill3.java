@@ -13,7 +13,7 @@ public class Bill3 {
 		int billR = Integer.parseInt(args[3]);
 		
 		if (rounder % 10 > 0){
-			billR == billR + 1;
+			billR = billR + 1;
 		}
         
         System.out.println("Dear c, b, and a: pay " billR + ".0");

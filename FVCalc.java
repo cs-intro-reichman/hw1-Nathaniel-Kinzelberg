@@ -6,7 +6,8 @@ public class FVCalc {
         // Initial investment amount (Principal)
         int p = Integer.parseInt(args[0]);
 
-        int r = Integer.parseInt(args[1]); / 100; // Convert from % to decimal
+        int r = Integer.parseInt(args[1]); 
+        r = r / 100;                        // Convert from % to decimal
 
         int y = Integer.parseInt(args[2]); //years for the investment
 
