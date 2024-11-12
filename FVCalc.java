@@ -2,21 +2,20 @@
 
 public class FVCalc {
     public static void main(String[] args) {
+        // Parse arguments and convert to appropriate types
+        int p = Integer.parseInt(args[0]); // Initial investment amount (Principal)
         
-        // Initial investment amount (Principal)
-        int p = Integer.parseInt(args[0]);
+        double r = Integer.parseInt(args[1]); // Interest rate as an integer (e.g., 5 for 5%)
+        r = r / 100.0; // Convert from percentage to decimal
 
-        int r = Integer.parseInt(args[1]); 
-        r = r / 100;                        // Convert from % to decimal
+        int y = Integer.parseInt(args[2]); // Number of years for the investment
 
-        int y = Integer.parseInt(args[2]); //years for the investment
+        // Calculate future value using the formula: FV = P * (1 + r)^n
+        double futureValue = p * Math.pow((1 + r), y);
 
-        // Calculate future value using the formula FV = P * (1 + r)^n
-        int pV = p;
-        int value2 = (1 + r);
-        Double magicNumber = (p * Math.pow(value2, y));
-
-        // Display the result with formatting
-        System.out.println("The future value of the investment is: " + magicNumber);
+        // Display the result with proper formatting
+        System.out.printf("After %d years, a $%d saved at %.1f%% will yield $%.0f\n", y, p, r * 100, futureValue);
     }
 }
+
+
