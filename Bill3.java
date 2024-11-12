@@ -5,10 +5,17 @@ public class Bill3 {
 		String name1 = args[0];
 		String name2 = args[1];
 		String name3 = args[2];
+
         Double bill = Double.parseDouble(args[3]);
         Double totalPer = bill / 3;
+		Double rounder = totalPer*10
+
+		int billR = int.parseInt(args[3]);
+		
+		if (rounder % 10 > 0){
+			billR == billR + 1;
+		}
         
-        System.out.println("The total amount everyone needs to pay is " + totalPer + " per person.");
-		System.out.println("This means that " + name1 + " " + name2 + " " + name3 + " will pay " + totalPer + "Shekel");
+        System.out.println("Dear c, b, and a: pay " billR + ".0");
     }
 }
