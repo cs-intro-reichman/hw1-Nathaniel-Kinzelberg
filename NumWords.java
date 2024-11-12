@@ -1,11 +1,7 @@
-import java.util.Scanner;
-
 public class NumWords {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a number (0 to 999): ");
-        int num = scanner.nextInt();
+      
+        int num = Integer.parseInt(args[0]);
 
         // Check if the input is within the valid range
         if (num < 0 || num > 999) {
@@ -22,6 +18,5 @@ public class NumWords {
             System.out.println("Units: " + units);
         }
 
-        scanner.close();  // Close the scanner
     }
 }

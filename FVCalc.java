@@ -1,25 +1,19 @@
-import java.util.Scanner;
-
 public class FVCalc {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        
         // Initial investment amount (Principal)
-        System.out.print("Enter the initial investment (Principal): ");
-        double p = scanner.nextDouble();
+        Double p = Double.parseInt(args[0]);
 
-        // Asks for annual interest rate in %
-        System.out.print("Enter the annual interest rate (in %): ");
-        double r = scanner.nextDouble() / 100; // Convert from % to decimal
+        Double rate = Double.parseInt(args[1]) / 100; // Convert from % to decimal
 
-        // Ask for the number of years the money is invested
-        System.out.print("Enter how many years in the future you'd like to see your investment: ");
-        int y = scanner.nextInt();
+        Double years = Double.parseInt(args[2]); //years for the investment
 
         // Calculate future value using the formula FV = P * (1 + r)^n
-        double futureValue = p * Math.pow((1 + r), y);
+        Double pV = p;
+        Double value2 = (1 + rate);
+        Double magicNumber = (p * Math.pow(value2, years));
 
         // Display the result with formatting
-        System.out.printf("The future value of the investment is: %.2f\n", futureValue);
+        System.out.println("The future value of the investment is:", magicNumber);
     }
 }
