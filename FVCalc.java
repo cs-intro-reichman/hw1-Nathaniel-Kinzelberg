@@ -14,7 +14,7 @@ public class FVCalc {
         double futureValue = p * Math.pow((1 + r), y);
 
         // Display the result with proper formatting
-        System.out.printf("After %d years, a $%d saved at %.1f%% will yield $%.0f\n", y, p, r * 100, futureValue);
+        System.out.println("After " + y + " years, a $" + p + " saved at " + r + ".0%25 will yeild " + futureValue);
     }
 }
 

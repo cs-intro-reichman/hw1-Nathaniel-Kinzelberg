@@ -11,11 +11,12 @@ public class Bill3 {
 		Double rounder = totalPer*10;
 
 		int billR = Integer.parseInt(args[3]);
+		billR = billR/3;
 		
 		if (rounder % 10 > 0){
 			billR = billR + 1;
 		}
         
-        System.out.println("Dear c, b, and a: pay " + billR);
+        System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + ": pay " + billR + ".0 Shekels each");
     }
 }
