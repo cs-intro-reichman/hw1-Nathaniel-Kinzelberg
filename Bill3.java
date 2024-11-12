@@ -5,7 +5,7 @@ public class Bill3 {
 		String name1 = args[0];
 		String name2 = args[1];
 		String name3 = args[2];
-        Double bill = Double.parseInt(args[3]);
+        Double bill = Double.parseDouble(args[3]);
         Double totalPer = bill / 3;
         
         System.out.println("The total amount everyone needs to pay is " + totalPer + " per person.");
