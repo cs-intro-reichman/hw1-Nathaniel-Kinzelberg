@@ -15,7 +15,7 @@ public class FVCalc {
         int futureValueInt = (int) futureValue;
 
         // Display the result with proper formatting
-        System.out.println("After " + y + " years, a $" + p + " saved at " + r + ".0%25 will yeild $" + futureValueInt);
+        System.out.println("After " + y + " years, a $" + p + " saved at " + r + ".0%25 will yield $" + futureValueInt);
     }
 }
 
