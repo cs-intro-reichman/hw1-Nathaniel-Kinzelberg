@@ -16,6 +16,6 @@ public class Bill3 {
 			billR = billR + 1;
 		}
         
-        System.out.println("Dear c, b, and a: pay " billR + ".0");
+        System.out.println("Dear c, b, and a: pay " billR);
     }
 }

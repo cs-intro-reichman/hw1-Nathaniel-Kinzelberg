@@ -14,7 +14,7 @@ public class FVCalc {
         // Calculate future value using the formula FV = P * (1 + r)^n
         int pV = p;
         int value2 = (1 + r);
-        int magicNumber = (p * Math.pow(value2, y));
+        Double magicNumber = (p * Math.pow(value2, y));
 
         // Display the result with formatting
         System.out.println("The future value of the investment is: " + magicNumber);
