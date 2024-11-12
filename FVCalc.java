@@ -2,11 +2,11 @@ public class FVCalc {
     public static void main(String[] args) {
         
         // Initial investment amount (Principal)
-        Double p = Double.parseInt(args[0]);
+        Double p = Double.parseDouble(args[0]);
 
-        Double rate = Double.parseInt(args[1]) / 100; // Convert from % to decimal
+        Double rate = Double.parseDouble(args[1]) / 100; // Convert from % to decimal
 
-        Double years = Double.parseInt(args[2]); //years for the investment
+        Double years = Double.parseDouble(args[2]); //years for the investment
 
         // Calculate future value using the formula FV = P * (1 + r)^n
         Double pV = p;
@@ -14,6 +14,6 @@ public class FVCalc {
         Double magicNumber = (p * Math.pow(value2, years));
 
         // Display the result with formatting
-        System.out.println("The future value of the investment is:", magicNumber);
+        System.out.println("The future value of the investment is: " + magicNumber);
     }
 }

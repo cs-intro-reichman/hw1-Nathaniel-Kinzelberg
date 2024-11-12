@@ -13,9 +13,7 @@ public class NumWords {
             int units = num % 10;
 
             // Prints in the unit notation
-            System.out.println("Hundreds: " + hundreds);
-            System.out.println("Tens: " + tens);
-            System.out.println("Units: " + units);
+            System.out.println("Hundreds: " + hundreds + " Tens: " + tens + " Units: " + units);
         }
 
     }
